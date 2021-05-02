@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:visibility="visible"
+    tools:layout_editor_absoluteX="206dp"
+    tools:layout_editor_absoluteY="233dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_brown"
+        android:clickable="true"
+        android:focusable="true"
+        tools:context=".Hobbies">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobbies and Interests"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please pick up to 6 interests"
+            android:textColor="@color/dark_grey"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.09" />
+
+        <Button
+            android:id="@+id/turkish"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Turkish"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/japanese" />
+
+        <Button
+            android:id="@+id/tennis"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Tennis"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/badminton" />
+
+        <Button
+            android:id="@+id/hockey"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Hockey"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintStart_toEndOf="@+id/cricket"
+            app:layout_constraintTop_toBottomOf="@+id/sports" />
+
+        <Button
+            android:id="@+id/pop"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Pop"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rock" />
+
+        <Button
+            android:id="@+id/italian"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Italian"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food" />
+
+        <TextView
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Sports"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/hip_hop"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Hip-Hop"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/music" />
+
+        <Button
+            android:id="@+id/badminton"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Badminton"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/football" />
+
+        <Button
+            android:id="@+id/thai"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Thai"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/italian" />
+
+        <TextView
+            android:id="@+id/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="148dp"
+            android:text="Music"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sports" />
+
+        <Button
+            android:id="@+id/japanese"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Japanese"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/italian" />
+
+        <Button
+            android:id="@+id/jazz"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Jazz"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.562"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pop" />
+
+        <Button
+            android:id="@+id/indie"
+            android:layout_width="90dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Indie"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.747"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rock" />
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:text="Food"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/music" />
+
+        <Button
+            android:id="@+id/indian"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Indian"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food" />
+
+        <Button
+            android:id="@+id/swimming"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Swimming"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.653"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cricket" />
+
+        <Button
+            android:id="@+id/american"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="American"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/japanese" />
+
+        <Button
+            android:id="@+id/rugby"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Rugby"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/badminton" />
+
+        <Button
+            android:id="@+id/rnb"
+            android:layout_width="102dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="RnB"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toStartOf="@+id/hip_hop"
+            app:layout_constraintStart_toEndOf="@+id/rock"
+            app:layout_constraintTop_toBottomOf="@+id/music" />
+
+        <Button
+            android:id="@+id/chinese"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Chinese"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food" />
+
+        <Button
+            android:id="@+id/basketball"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Basketball"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/badminton" />
+
+        <Button
+            android:id="@+id/cricket"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Cricket"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintStart_toEndOf="@+id/football"
+            app:layout_constraintTop_toBottomOf="@+id/sports" />
+
+        <Button
+            android:id="@+id/football"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Football"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sports" />
+
+        <Button
+            android:id="@+id/rock"
+            android:layout_width="118dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Rock"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/music" />
+
+        <Button
+            android:id="@+id/country"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Country"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.368"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rock" />
+
+        <Button
+            android:id="@+id/classical"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Classical"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pop" />
+
+        <Button
+            android:id="@+id/mexican"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Mexican"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/italian" />
+
+        <TextView
+            android:id="@+id/movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:text="Movies"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food" />
+
+        <Button
+            android:id="@+id/drama"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Drama"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movies" />
+
+        <Button
+            android:id="@+id/horror"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Horror"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movies" />
+
+        <Button
+            android:id="@+id/romance"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Romance"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.879"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movies" />
+
+        <Button
+            android:id="@+id/musicals"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Musicals"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drama" />
+
+        <Button
+            android:id="@+id/comedy"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Comedy"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drama" />
+
+        <Button
+            android:id="@+id/scifi"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Sci-Fi"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.912"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drama" />
+
+        <Button
+            android:id="@+id/action"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Action"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/musicals" />
+
+        <Button
+            android:id="@+id/thriller"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Thriller"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:backgroundTint="@color/button_background_color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/musicals" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="81dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="732dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_register"
+            android:layout_width="311dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="736dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/light_orange"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

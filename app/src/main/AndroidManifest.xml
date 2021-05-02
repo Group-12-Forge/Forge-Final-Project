@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.forge">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Forge">
+        <activity android:name=".Matches"></activity>
+        <activity android:name=".MBTI_Results" />
+        <activity
+            android:name=".MBTI_Test2"
+            android:label="@string/title_activity_m_b_t_i__test2"
+            android:theme="@style/Theme.Forge.NoActionBar" />
+        <activity
+            android:name=".MBTI_Test1"
+            android:label="@string/title_activity_m_b_t_i__test1"
+            android:theme="@style/Theme.Forge.NoActionBar" />
+        <activity android:name=".PreMBTI" />
+        <activity android:name=".VerifyEmail" />
+        <activity
+            android:name=".MessageActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".DisplayChats"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".CoreValues" />
+        <activity android:name=".Hobbies" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

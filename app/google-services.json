@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "88161865485",
+    "project_id": "forge-9e1e5",
+    "storage_bucket": "forge-9e1e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88161865485:android:ed75b13ec52e1e7a822a44",
+        "android_client_info": {
+          "package_name": "com.example.forge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88161865485-imlfamjgn5l9j9bort2c28l7p9sul3ao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.forge",
+            "certificate_hash": "92757a5704382b1e0e51b9e5d4ab69013fd057da"
+          }
+        },
+        {
+          "client_id": "88161865485-51l7vrmfodrd39v500fcb1cmqvb3ahjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu4NnqY4GSh67mYEBvPJzzNUXQnKsh-LA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88161865485-51l7vrmfodrd39v500fcb1cmqvb3ahjj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

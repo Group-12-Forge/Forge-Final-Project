@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MBTI_Test1"
+    tools:showIn="@layout/activity_mbti_test1">
+
+    <RadioGroup
+        android:id="@+id/Question_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Question1"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/Q1_SA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Strongly_Agree"
+            android:textColor="@color/black"
+            android:theme="@style/OrangeStyle"
+            android:onClick="Q1clicked"/>
+
+        <RadioButton
+            android:id="@+id/Q1_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Agree"
+            android:textColor="@color/black"
+            android:theme="@style/OrangeStyle"
+            android:onClick="Q1clicked"/>
+
+        <RadioButton
+            android:id="@+id/Q1_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Disagree"
+            android:textColor="@color/black"
+            android:theme="@style/OrangeStyle"
+            android:onClick="Q1clicked"/>
+
+        <RadioButton
+            android:id="@+id/Q1_SD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Strongly_Disagree"
+            android:textColor="@color/black"
+            android:theme="@style/OrangeStyle"
+            android:onClick="Q1clicked"/>
+
+        <RadioGroup
+            android:id="@+id/Question_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question2"
+                android:textColor="@color/black"
+                android:theme="@style/OrangeStyle"/>
+
+            <RadioButton
+                android:id="@+id/Q2_SA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Strongly_Agree"
+                android:textColor="@color/black"
+                android:theme="@style/OrangeStyle"
+                android:onClick="Q2clicked"/>
+
+
+            <RadioButton
+                android:id="@+id/Q2_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Agree"
+                android:textColor="@color/black"
+                android:theme="@style/OrangeStyle"
+                android:onClick="Q2clicked"/>
+
+            <RadioButton
+                android:id="@+id/Q2_D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Disagree"
+                android:textColor="@color/black"
+                android:theme="@style/OrangeStyle"
+                android:onClick="Q2clicked"/>
+
+            <RadioButton
+                android:id="@+id/Q2_SD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Strongly_Disagree"
+                android:textColor="@color/black"
+                android:theme="@style/OrangeStyle"
+                android:onClick="Q2clicked"/>
+
+            <RadioGroup
+                android:id="@+id/Question_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Question3"
+                    android:textColor="@color/black"
+                    android:theme="@style/OrangeStyle"/>
+
+                <RadioButton
+                    android:id="@+id/Q3_SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Strongly_Agree"
+                    android:textColor="@color/black"
+                    android:theme="@style/OrangeStyle"
+                    android:onClick="Q3clicked"/>
+
+                <RadioButton
+                    android:id="@+id/Q3_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Agree"
+                    android:textColor="@color/black"
+                    android:theme="@style/OrangeStyle"
+                    android:onClick="Q3clicked"/>
+
+                <RadioButton
+                    android:id="@+id/Q3_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Disagree"
+                    android:textColor="@color/black"
+                    android:theme="@style/OrangeStyle"
+                    android:onClick="Q3clicked"/>
+
+                <RadioButton
+                    android:id="@+id/Q3_SD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Strongly_Disagree"
+                    android:textColor="@color/black"
+                    android:theme="@style/OrangeStyle"
+                    android:onClick="Q3clicked"/>
+
+                <RadioGroup
+                    android:id="@+id/Question_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/Question4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Question4"
+                        android:textColor="@color/black"
+                        android:theme="@style/OrangeStyle"/>
+
+                    <RadioButton
+                        android:id="@+id/Q4_SA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Strongly_Agree"
+                        android:textColor="@color/black"
+                        android:theme="@style/OrangeStyle"
+                        android:onClick="Q4clicked"/>
+
+                    <RadioButton
+                        android:id="@+id/Q4_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Agree"
+                        android:textColor="@color/black"
+                        android:theme="@style/OrangeStyle"
+                        android:onClick="Q4clicked"/>
+
+                    <RadioButton
+                        android:id="@+id/Q4_D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Disagree"
+                        android:textColor="@color/black"
+                        android:theme="@style/OrangeStyle"
+                        android:onClick="Q4clicked"/>
+
+                    <RadioButton
+                        android:id="@+id/Q4_SD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Strongly_Disagree"
+                        android:textColor="@color/black"
+                        android:theme="@style/OrangeStyle"
+                        android:onClick="Q4clicked"/>
+
+                    <RadioGroup
+                        android:id="@+id/Question_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/Question5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Question5"
+                            android:textColor="@color/black"
+                            android:theme="@style/OrangeStyle"/>
+
+                        <RadioButton
+                            android:id="@+id/Q5_SA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Strongly_Agree"
+                            android:textColor="@color/black"
+                            android:theme="@style/OrangeStyle"
+                            android:onClick="Q5clicked"/>
+
+                        <RadioButton
+                            android:id="@+id/Q5_A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Agree"
+                            android:textColor="@color/black"
+                            android:theme="@style/OrangeStyle"
+                            android:onClick="Q5clicked"/>
+
+                        <RadioButton
+                            android:id="@+id/Q5_D"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Disagree"
+                            android:textColor="@color/black"
+                            android:theme="@style/OrangeStyle"
+                            android:onClick="Q5clicked"/>
+
+                        <RadioButton
+                            android:id="@+id/Q5_SD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Strongly_Disagree"
+                            android:textColor="@color/black"
+                            android:theme="@style/OrangeStyle"
+                            android:onClick="Q5clicked"/>
+
+                        <RadioGroup
+                            android:id="@+id/Question_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/Question6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Question6"
+                                android:textColor="@color/black"
+                                android:theme="@style/OrangeStyle"/>
+
+                            <RadioButton
+                                android:id="@+id/Q6_SA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Strongly_Agree"
+                                android:textColor="@color/black"
+                                android:theme="@style/OrangeStyle"
+                                android:onClick="Q6clicked"/>
+
+                            <RadioButton
+                                android:id="@+id/Q6_A"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Agree"
+                                android:textColor="@color/black"
+                                android:theme="@style/OrangeStyle"
+                                android:onClick="Q6clicked"/>
+
+                            <RadioButton
+                                android:id="@+id/Q6_D"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Disagree"
+                                android:textColor="@color/black"
+                                android:theme="@style/OrangeStyle"
+                                android:onClick="Q6clicked"/>
+
+                            <RadioButton
+                                android:id="@+id/Q6_SD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Strongly_Disagree"
+                                android:textColor="@color/black"
+                                android:theme="@style/OrangeStyle"
+                                android:onClick="Q6clicked"/>
+                            <Button
+                                android:id="@+id/next"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="40dp"
+                                android:background="@drawable/rounded_corners"
+                                android:text="Next"
+                                android:textColor="@color/white" />
+                        </RadioGroup>
+                    </RadioGroup>
+                </RadioGroup>
+            </RadioGroup>
+        </RadioGroup>
+    </RadioGroup>
+</androidx.core.widget.NestedScrollView>
