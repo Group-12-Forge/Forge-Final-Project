@@ -87,7 +87,7 @@ public class VerifyEmail extends AppCompatActivity {
             public void onClick(View v) {
                 FirebaseUser use = FirebaseAuth.getInstance().getCurrentUser();
                 if(use.isEmailVerified() == true)
-                    startActivity(new Intent(VerifyEmail.this, PreMBTI.class));
+                    startActivity(new Intent(VerifyEmail.this, UserDetails.class));
                 else
                     Toast.makeText(VerifyEmail.this, "Email has not been verified, press re-send to send a verification link to : " +FirebaseAuth.getInstance().getCurrentUser().getEmail(), Toast.LENGTH_SHORT).show();
             }

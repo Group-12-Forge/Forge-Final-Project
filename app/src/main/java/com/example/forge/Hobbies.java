@@ -236,11 +236,12 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount += 1;
                         selectedInterest = selectedInterest+"FTB";
 
+
                     } else {
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -257,7 +258,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -273,7 +274,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -291,7 +292,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -309,7 +310,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -327,7 +328,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -345,7 +346,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -362,7 +363,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -379,7 +380,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -396,7 +397,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -414,7 +415,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -431,7 +432,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -449,7 +450,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -467,7 +468,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -485,7 +486,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -503,7 +504,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -521,7 +522,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -540,7 +541,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -558,7 +559,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -576,7 +577,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -594,7 +595,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -612,7 +613,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -629,7 +630,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -647,7 +648,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -665,7 +666,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -683,7 +684,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -701,7 +702,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -719,7 +720,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -737,7 +738,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -755,7 +756,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -773,7 +774,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only pick up to 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -791,7 +792,7 @@ public class Hobbies extends AppCompatActivity{
                         selectionCount -= 1;
                     }
                 } else{
-                    Toast.makeText(Hobbies.this, "Please only 6 interests", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Hobbies.this, "Please only pick 6 interests", Toast.LENGTH_SHORT).show();
                 }
             }
         });

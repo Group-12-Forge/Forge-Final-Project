@@ -1,5 +1,4 @@
 package com.example.forge;
-
 import java.util.*;
 public class Compatibility {
 
@@ -20,6 +19,7 @@ public class Compatibility {
         int totalCoreValues = 3;
         //max amount allowed to select
         int totalHobbiesInterests = 6;
+
         String[][] compatibleMBTI = {
                 {"ENTJ", "ENTP", "INTJ", "INTP", "ESTJ", "ESFJ", "ISTJ", "ISFJ", "ENFJ", "ENFP", "INFJ", "INFP", "ESTP", "ESFP", "ISTP", "ISFP"},
                 {"INFP", "ISTJ", "ESFP", "ENTJ", "INTP", "ISFP", "ENTP", "ENFP", "ISTP", "ISFJ", "ESTP", "ENTJ", "INFJ", "INTJ", "ENFJ", "ESFJ"},
@@ -30,10 +30,11 @@ public class Compatibility {
 
         //find whether the mbti personality types are compatible, based off the array we created
         for(int col = 0; col < 16; col++){
-            if (compatibleMBTI[0][col] == userA.getPersonalityType()){
+            if (compatibleMBTI[0][col].equals(userA.getPersonalityType())){
                 for(int row = 0; row < 4; row++){
-                    if (compatibleMBTI[row][col] == userB.getPersonalityType()){
+                    if (compatibleMBTI[row][col].equals(userB.getPersonalityType())){
                         compatibilityScore += 0.3;
+                        System.out.println("mbti");
                         //escape the inner for loop
                         break;
                     }
@@ -78,6 +79,9 @@ public class Compatibility {
         String[] valuesOverlap = coreA.toArray(new String[coreA.size()]);
 
         int sizeOfIntersection = valuesOverlap.length;
+        if (sizeOfIntersection > 1) {
+            System.out.println("coreValues");
+        }
         //update compatibility score based on proportion of same core values
         compatibilityScore += (sizeOfIntersection/totalCoreValues)*0.2;
 
@@ -117,17 +121,22 @@ public class Compatibility {
         String[] interestsOverlap = setA.toArray(new String[setA.size()]);
 
         int intersectionSize = interestsOverlap.length;
+        if (intersectionSize > 1) {
+            System.out.println("hobbies");
+        }
         //update compatibility score based on proportion of same hobbies and interests
         compatibilityScore += (intersectionSize/totalHobbiesInterests)*0.2;
 
 
         //IF WHAT THE USERS OFFER MOST IN A FRIENDSHIP OR VALUES MOST IN A FRIENDSHIP IS COMPATIBLE
         //...UPDATE COMPATIBLITY SCORE ACCORDINGLY.
-        if (userA.getValueMost() == userB.getOfferMost()){
+        if (userA.getValueMost().equals(userB.getOfferMost()) || userB.getValueMost().equals(userA.getOfferMost())){
             compatibilityScore += 0.2;
+            System.out.println("offer");
         }
-        else if (userA.getValueMost() == userB.getValueMost() || userA.getOfferMost() == userB.getValueMost()){
+        else if (userA.getValueMost().equals(userB.getValueMost()) || userA.getOfferMost().equals(userB.getOfferMost())){
             compatibilityScore += 0.1;
+            System.out.println("value");
         }
 
         String[] types = {"E", "I", "S", "N", "T", "F", "J", "P"};
@@ -135,7 +144,7 @@ public class Compatibility {
         //FIND THE OPPOSITE TRAIT FOR USER A, BY TRAVERSING THE TYPES ARRAY
         String oppositeTrait = "";
         for(int x = 0; x < 8; x++){
-            if (types[x] == userA.getDominantTrait()){
+            if (types[x].equals(userA.getDominantTrait())){
                 if (x%2 == 0){
                     oppositeTrait = types[x+1];
                 }
@@ -148,8 +157,9 @@ public class Compatibility {
 
 
         //if the users have complementary dominant traits, this increases the compatibilityScore
-        if (userB.getDominantTrait() == oppositeTrait){
+        if (userB.getDominantTrait().equals(oppositeTrait)){
             compatibilityScore += 0.1;
+            System.out.println("dominant");
         }
 
 

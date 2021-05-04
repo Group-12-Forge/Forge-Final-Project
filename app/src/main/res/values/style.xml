@@ -3,6 +3,11 @@
     <style name="OrangeStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorAccent">@android:color/holo_orange_light</item>
         <item name="android:textColorPrimary">@android:color/black</item>
-
     </style>
+
+    <style name="OrangeStyle.CustomTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
 </resources>

@@ -15,10 +15,11 @@ public class User {
     private String dominantTrait;
     private String valueMost;
     private String offerMost;
+    private String bio;
 
 
     //changed the first line
-    public User(String id, String email, String name, String username, String imageURL, String personalityType, String coreValues, String hobbiesInterests, String dominantTrait, String valueMost, String offerMost) {
+    public User(String id, String email, String name, String username, String imageURL, String personalityType, String coreValues, String hobbiesInterests, String dominantTrait, String valueMost, String offerMost, String bio) {
         this.id = id;
         this.email = email;
         this.name = name;
@@ -33,6 +34,7 @@ public class User {
         this.dominantTrait = dominantTrait;
         this.valueMost = valueMost;
         this.offerMost = offerMost;
+        this.bio = bio;
 
     }
 
@@ -123,5 +125,13 @@ public class User {
 
     public void setImageURL(String imageURL) {
         this.imageURL = imageURL;
+    }
+
+    public String getBio(){
+        return bio;
+    }
+
+    public void setBio(){
+        this.bio = bio;
     }
 }

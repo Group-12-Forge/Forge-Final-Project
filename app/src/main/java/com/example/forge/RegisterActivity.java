@@ -138,7 +138,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                                     reference.child(userid).setValue(hashMap);
 
-                                    Toast.makeText(RegisterActivity.this, "Data inserted", Toast.LENGTH_SHORT).show();
+                                    //Toast.makeText(RegisterActivity.this, "Data inserted", Toast.LENGTH_SHORT).show();
                                     openVerification();
                                     progressBar.setVisibility(View.INVISIBLE);
 

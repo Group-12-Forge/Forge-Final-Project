@@ -56,10 +56,35 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         Chat chat = mChat.get(position);
         holder.show_message.setText(chat.getMessage());
 
-        if (imageurl.equals("default")) {
+        if(imageurl.equals("dolphin")) {
+            holder.profile_image.setImageResource(R.drawable.profile1);
+        }
+
+        else if (imageurl.equals("crocodile")){
+            holder.profile_image.setImageResource(R.drawable.profile2);
+        }
+
+        else if (imageurl.equals("koala")){
+            holder.profile_image.setImageResource(R.drawable.profile3);
+        }
+
+        else if (imageurl.equals("peacock")){
+            holder.profile_image.setImageResource(R.drawable.profile4);
+        }
+
+        //profile 4
+        else {
             holder.profile_image.setImageResource(R.drawable.ic_baseline_android_24);
+        }
+
+        if (position == mChat.size()-1) {
+            if (chat.isIsseen()) {
+                holder.txt_seen.setText("Seen");
+            } else {
+                holder.txt_seen.setText("Delivered");
+            }
         } else {
-            Glide.with(mContext).load(imageurl).into(holder.profile_image);
+            holder.txt_seen.setVisibility(View.GONE);
         }
     }
 
@@ -72,12 +97,14 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
 
         public TextView show_message;
         public ImageView profile_image;
+        public TextView txt_seen;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             show_message = itemView.findViewById(R.id.show_message);
             profile_image = itemView.findViewById(R.id.profile_image);
+            txt_seen = itemView.findViewById(R.id.txt_seen);
         }
     }
 

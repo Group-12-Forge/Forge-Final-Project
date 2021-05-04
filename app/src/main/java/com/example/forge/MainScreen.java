@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -27,6 +28,7 @@ public class MainScreen extends AppCompatActivity {
     ImageButton chatBtn, matchesBtn;
 
     CircleImageView profile_image;
+    ImageView profile_pic;
     TextView username;
 
     FirebaseUser firebaseUser;
@@ -42,6 +44,7 @@ public class MainScreen extends AppCompatActivity {
         getSupportActionBar().setTitle("");
 
         profile_image = findViewById(R.id.profile_image);
+        profile_pic = findViewById(R.id.profile_pic);
         username = findViewById(R.id.username);
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -57,9 +60,19 @@ public class MainScreen extends AppCompatActivity {
                         username.setText(user.getUsername());
                         if (user.getImageURL().equals("default")) {
                             profile_image.setImageResource(R.drawable.ic_baseline_android_24);
-                        } else {
-                            //change this
-                            Glide.with(getApplicationContext()).load(user.getImageURL()).into(profile_image);
+                            profile_pic.setImageResource(R.drawable.ic_baseline_android_24);
+                        } else if (user.getImageURL().equals("dolphin")) {
+                            profile_image.setImageResource(R.drawable.profile1);
+                            profile_pic.setImageResource(R.drawable.profile1);
+                        } else if (user.getImageURL().equals("crocodile")) {
+                            profile_image.setImageResource(R.drawable.profile2);
+                            profile_pic.setImageResource(R.drawable.profile2);
+                        } else if (user.getImageURL().equals("koala")) {
+                            profile_image.setImageResource(R.drawable.profile3);
+                            profile_pic.setImageResource(R.drawable.profile3);
+                        } else if (user.getImageURL().equals("peacock")) {
+                            profile_image.setImageResource(R.drawable.profile4);
+                            profile_pic.setImageResource(R.drawable.profile4);
                         }
                     }
                 }
@@ -84,6 +97,14 @@ public class MainScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openMatches();
+            }
+        });
+
+        ImageButton reportBtn = (ImageButton) findViewById(R.id.reportBtn);
+        reportBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainScreen.this, popup.class));
             }
         });
 

@@ -61,13 +61,28 @@ public class DisplayChats extends AppCompatActivity {
                     User user = dataSnapshot.getValue(User.class);
                     if (user != null) {
                         username.setText(user.getUsername());
-                        if (user.getImageURL().equals("default")) {
+                        if(user.getImageURL().equals("dolphin")) {
+                            profile_image.setImageResource(R.drawable.profile1);
+                        }
+
+                        else if (user.getImageURL().equals("crocodile")){
+                            profile_image.setImageResource(R.drawable.profile2);
+                        }
+
+                        else if (user.getImageURL().equals("koala")){
+                            profile_image.setImageResource(R.drawable.profile3);
+                        }
+
+                        else if (user.getImageURL().equals("peacock")){
+                            profile_image.setImageResource(R.drawable.profile4);
+                        }
+
+                        //profile 4
+                        else {
                             profile_image.setImageResource(R.drawable.ic_baseline_android_24);
-                        } else {
-                            //change this
-                            Glide.with(getApplicationContext()).load(user.getImageURL()).into(profile_image);
                         }
                     }
+
                 }
 
                 @Override

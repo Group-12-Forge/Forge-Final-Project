@@ -218,7 +218,6 @@ public class MBTI_Results extends AppCompatActivity {
         String userid = firebaseUser.getUid();
         DatabaseReference databaseReference = FirebaseDatabase.getInstance("https://forge-9e1e5-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Users");
         databaseReference.child(userid).child("dominantTrait").setValue(dominantTrait);
-        Toast.makeText(MBTI_Results.this, "Data inserted", Toast.LENGTH_SHORT).show();
 
         return dominant;
 

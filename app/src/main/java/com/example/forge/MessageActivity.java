@@ -51,6 +51,8 @@ public class MessageActivity extends AppCompatActivity {
 
     Intent intent;
 
+    ValueEventListener seenListener;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,10 +108,25 @@ public class MessageActivity extends AppCompatActivity {
                     if (user != null && user.getUsername() != null) {
                         username.setText(user.getUsername());
 
-                        if (user.getImageURL().equals("default")) {
+                        if(user.getImageURL().equals("dolphin")) {
+                            profile_image.setImageResource(R.drawable.profile1);
+                        }
+
+                        else if (user.getImageURL().equals("crocodile")){
+                            profile_image.setImageResource(R.drawable.profile2);
+                        }
+
+                        else if (user.getImageURL().equals("koala")){
+                            profile_image.setImageResource(R.drawable.profile3);
+                        }
+
+                        else if (user.getImageURL().equals("peacock")){
+                            profile_image.setImageResource(R.drawable.profile4);
+                        }
+
+                        //profile 4
+                        else {
                             profile_image.setImageResource(R.drawable.ic_baseline_android_24);
-                        } else {
-                            Glide.with(MessageActivity.this).load(user.getImageURL()).into(profile_image);
                         }
                     }
                     readMessages(fuser.getUid(), userid, user.getImageURL());
@@ -121,6 +138,30 @@ public class MessageActivity extends AppCompatActivity {
                 }
             });
         }
+        seenMessage(userid);
+    }
+    private void seenMessage(String userid) {
+        reference = FirebaseDatabase.getInstance("https://forge-9e1e5-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Chats");
+        seenListener = reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dataSnapshot: snapshot.getChildren()) {
+                    Chat chat = dataSnapshot.getValue(Chat.class);
+                    if (chat.getReceiver().equals(fuser.getUid()) && chat.getSender().equals(userid)) {
+                        HashMap<String, Object> hashMap = new HashMap<>();
+                        hashMap.put("isseen", true);
+                        dataSnapshot.getRef().updateChildren(hashMap);
+                    }
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
     }
 
     private void sendMessage(String sender, final String receiver, String message) {
@@ -130,7 +171,10 @@ public class MessageActivity extends AppCompatActivity {
         hashMap.put("receiver", receiver);
         hashMap.put("message", message);
 
+        hashMap.put("isseen", false);
         reference.child("Chats").push().setValue(hashMap);
+
+
     }
 
     private void readMessages(String myid, String userid, String imageurl) {
